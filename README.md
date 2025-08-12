@@ -15,7 +15,7 @@ Personal Linux learning notes based on Jadi’s course
 
 <div dir="rtl" align="right">
 
-<span dir="rtl"><bdi>BIOS</bdi></span>  
+# <bdi>BIOS</bdi>  
 
 <span dir="rtl"><bdi>BIOS</bdi> (سیستم ورودی/خروجی پایه) از طریق یک سیستم مبتنی بر منوی متنی قابل کنترل است و با دسترسی به اولین سکتور از اولین پارتیشن هارد دیسک شما (<bdi>master boot record (MBR)</bdi>) کامپیوتر را بوت می‌کند.</span>  
 
@@ -23,7 +23,10 @@ Personal Linux learning notes based on Jadi’s course
 
 </div>
 
+
 <div dir="rtl" align="right">
+
+# <bdi>UEFI</bdi>  
 
 <span dir="rtl"><bdi>UEFI</bdi> یعنی: رابط یکپارچه توسعه‌پذیر میان‌افزار (<bdi>Unified Extensible Firmware Interface</bdi>) و یک فناوری جدیدتر از <bdi>BIOS</bdi> برای بوت کردن سیستم است.</span>  
 
