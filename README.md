@@ -346,5 +346,176 @@ root@funlife:/proc/sys/fs# cat file-max
 
 </div>
 
+<div dir="rtl" align="right">
+<h2><bdi>D-Bus</bdi></h2>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+  <span dir="rtl">
+    <bdi>D-Bus</bdi> یک سامانه‌ی <bdi>message bus</bdi> در لینوکس و سیستم‌های مشابه است که امکان برقراری ارتباط ساده و استاندارد بین برنامه‌ها (<bdi>Inter-Process Communication</bdi>) را فراهم می‌کند. این مکانیزم علاوه بر انتقال پیام، نقش مهمی در هماهنگی چرخه‌ی اجرای پردازه‌ها دارد؛ مثلاً کمک می‌کند تنها یک نمونه از یک برنامه یا سرویس اجرا شود و در صورت نیاز، برنامه‌ها یا سرویس‌های موردنیاز به‌صورت خودکار راه‌اندازی شوند. به این ترتیب، <bdi>D-Bus</bdi> توسعه‌دهندگان را قادر می‌سازد بدون پیچیدگی زیاد، ارتباط پایدار و مدیریت‌شده‌ای بین اپلیکیشن‌ها و سرویس‌های سیستم برقرار کنند.
+  </span>
+</p>
+</div>
+
+<br>
+
+<div dir="rtl" align="right">
+<h2> دستورات بررسی سخت‌افزار </h2>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lsusb</bdi>, <bdi>lspci</bdi>, <bdi>lsblk</bdi>, <bdi>lshw</bdi> درست مثل <bdi>ls</bdi> اما برای <bdi>pci</bdi>، <bdi>usb</bdi>، ...</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lspci</bdi>: دستگاه‌های <bdi>PCI</bdi> متصل به کامپیوتر را نشان می‌دهد.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lsusb</bdi>: تمام دستگاه‌های <bdi>USB</bdi> متصل به سیستم را نشان می‌دهد.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lshw</bdi>: سخت‌افزار را نشان می‌دهد. برای دریافت لیست کامل، ممکن است به وضعیت <bdi>root</bdi> نیاز باشد. آن را امتحان کنید!</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lsblk</bdi>: برای لیستی از دستگاه‌ها که می‌توانند از بلوک‌های داده بخوانند یا بنویسند، استفاده می‌شود.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<h2> ماژول‌های قابل بارگذاری کرنل (<bdi>Loadable Kernel Modules</bdi>) </h2>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">لینوکس، مثل هر سیستم‌عامل دیگری، برای کار کردن با سخت‌افزار به درایورها نیاز دارد. در سیستم‌عامل مایکروسافت ویندوز، معمولاً باید این درایورها را جداگانه نصب کنید، اما در لینوکس بیشتر درایورها به‌طور پیش‌فرض در سیستم موجود هستند.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">بااین‌حال، برای جلوگیری از این‌که کرنل همه‌ی آن‌ها را هم‌زمان بارگذاری کند (که باعث افزایش حجم و سنگین شدن کرنل می‌شود)، لینوکس از ماژول‌های کرنل استفاده می‌کند.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">ماژول‌های قابل بارگذاری کرنل (با پسوند ‎<bdi>.ko</bdi>‎) در واقع فایل‌های شیء (<bdi>object files</bdi>) هستند که برای گسترش قابلیت‌های کرنل یک توزیع لینوکس به‌کار می‌روند. این ماژول‌ها بیشتر برای پشتیبانی از سخت‌افزارهای جدید به‌کار می‌روند؛ مثل کارت‌های توسعه‌ی <bdi>IoT</bdi>، که هنوز به‌طور پیش‌فرض در توزیع لینوکس موجود نیستند.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">شما می‌توانید ماژول‌ها را با استفاده از <bdi>lsmod</bdi> بررسی کنید یا آنها را از طریق دستورات <bdi>modprobe</bdi> مدیریت کنید.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>lsmod</bdi>: ماژول‌های هسته را نشان می‌دهد. آنها در <bdi>/lib/modules</bdi> قرار دارند.</span>
+</p>
+</div>
+
+<div dir="ltr" align="left">
+<pre>
+root@funlife:/dev# lsmod
+Module                  Size  Used by
+pci_stub               12622  1
+vboxpci                23256  0
+vboxnetadp             25670  0
+vboxnetflt             27605  0
+vboxdrv               418013  3 vboxnetadp,vboxnetflt,vboxpci
+ctr                    13049  3
+ccm                    17731  3
+dm_crypt               23172  1
+bnep                   19543  2
+rfcomm                 69509  8
+uvcvideo               81065  0
+arc4                   12608  2
+videobuf2_vmalloc      13216  1 uvcvideo
+intel_rapl             18783  0
+iwldvm                236430  0
+x86_pkg_temp_thermal    14205  0 
+</pre>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">برای کسب اطلاعات بیشتر در مورد یک ماژول، از <bdi>modinfo</bdi> استفاده کنید.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">اگر نیاز به اضافه کردن یک ماژول به هسته خود دارید (مثلاً یک درایور جدید برای سخت‌افزار) یا حذف آن (یک درایور را حذف نصب کنید)، می‌توانید از <bdi>rmmod</bdi> و <bdi>modprobe</bdi> استفاده کنید.</span>
+</p>
+</div>
+
+<div dir="ltr" align="left">
+<pre>
+# rmmod iwlwifi
+</pre>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">و این هم برای نصب ماژول‌ها:</span>
+</p>
+</div>
+
+<div dir="ltr" align="left">
+<pre>
+# insmod kernel/drivers/net/wireless/iwlwifi.ko
+</pre>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">اما هیچ‌کس از <bdi>insmod</bdi> استفاده نمی‌کند زیرا وابستگی‌ها را درک نمی‌کند و شما باید کل مسیر فایل ماژول را به آن بدهید. در عوض، از دستور <bdi>modprobe</bdi> استفاده کنید:</span>
+</p>
+</div>
+
+<div dir="ltr" align="left">
+<pre>
+# modprobe iwlwifi
+</pre>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">شما می‌توانید از سوئیچ <bdi>-f</bdi> برای حذف اجباری ماژول <bdi>rmmod</bdi> استفاده کنید، حتی اگر در حال استفاده باشد.</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">اگر لازم است هر بار که سیستم شما بوت می‌شود، برخی ماژول‌ها بارگذاری شوند، یکی از موارد زیر را انجام دهید:</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">نام آنها را به این فایل اضافه کنید <bdi>/etc/modules</bdi></span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">فایل‌های پیکربندی آنها را به <bdi>/etc/modprobe.d/</bdi> اضافه کنید.</span>
+</p>
+</div>
+
 
 
