@@ -128,11 +128,23 @@ Personal Linux learning notes based on Jadi’s course
 - **PCI Express (PCIe)**: نسخه جدیدتر و سریع‌تر PCI که در اکثر سیستم‌های مدرن استفاده می‌شود.
 
 ---
+<div dir="rtl" align="right">
 
-## هارد داخلی (Internal HDD)  
-- **PATA**: رابط قدیمی (منسوخ شده)  
-- **SATA**: رابط سریال، پشتیبانی از حداکثر ۴ دستگاه، نسخه‌های II و III سریع‌تر هستند.  
-- **SCSI**: رابط موازی با پشتیبانی تا ۸ دستگاه، مخفف <bdi>Small Computer System Interface</bdi>.
+<h2>هارد داخلی (<bdi>Internal HDD</bdi>)</h2>
+
+<p>
+  <span dir="rtl">- <bdi>PATA</bdi>: رابط قدیمی (منسوخ شده)</span>
+</p>
+
+<p>
+  <span dir="rtl">- <bdi>SATA</bdi>: رابط سریال، پشتیبانی از حداکثر ۴ دستگاه، نسخه‌های <bdi>II</bdi> و <bdi>III</bdi> سریع‌تر هستند.</span>
+</p>
+
+<p>
+  <span dir="rtl">- <bdi>SCSI</bdi>: رابط موازی با پشتیبانی تا ۸ دستگاه، مخفف <bdi>Small Computer System Interface</bdi>.</span>
+</p>
+
+</div>
 
 ---
 
