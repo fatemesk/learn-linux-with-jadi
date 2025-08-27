@@ -201,6 +201,9 @@ Personal Linux learning notes based on Jadi’s course
   <span dir="rtl"><bdi>GPIO</bdi> مخفف "<bdi>General-purpose input/output</bdi>" و به معنی پین‌های ورودی/خروجی همه‌منظوره است. این پین‌ها رابط‌های دیجیتالی هستند که در میکروکنترلرها و دستگاه‌های الکترونیکی دیگر وجود دارند و وظیفه اصلی آن‌ها تعامل با اجزای خارجی است. رفتار این پین‌ها (ورودی یا خروجی بودن) توسط کاربر و از طریق نرم‌افزار در زمان اجرا تعیین می‌شود، که امکان کنترل یا دریافت سیگنال از قطعاتی مانند سنسورها، <bdi>LED</bdi>ها و سوئیچ‌ها را فراهم می‌آورد.</span>
 </p>
 
+<img width="600" height="491" alt="image" src="https://github.com/user-attachments/assets/86b1406d-826c-4a86-97fc-07f72b06c3a2" />
+
+
 <h2>جزئیات عملکرد و کاربردها</h2>
 
 <h3>همه‌منظوره بودن</h3>
@@ -223,7 +226,14 @@ Personal Linux learning notes based on Jadi’s course
 </div>
 
 <br>
+<div dir="rtl" align="right">
+<h2>
+<p>
+  <span dir="rtl"> نحوه <bdi>export</bdi> کردن یک <bdi>GPIO</bdi> در لینوکس</span>
+</p>
+</h2>
 
+</div>
 <div dir="ltr" align="left">
 <pre>
 <div dir="rtl" align="right">
