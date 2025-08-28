@@ -217,11 +217,7 @@ Personal Linux learning notes based on Jadi’s course
 </p>
 
 </div>
-<div dir="rtl" align="right">
 
-<p>
-  <span dir="rtl">برای استفاده از هر پین <bdi>GPIO</bdi>، لازم است تا از طریق کد و نرم‌افزار، عملکرد آن به عنوان ورودی یا خروجی تعریف شود.</span>
-</p>
 
 </div>
 
