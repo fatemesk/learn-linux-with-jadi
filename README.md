@@ -294,10 +294,22 @@ block  bus  class  dev  devices  firmware  fs  hypervisor  kernel  module  power
 </pre>
 </div>
 
+<div dir="rtl" align="right">
+
+## دستگاه‌های بلاکی در لینوکس  
+
+<p>
+  <span dir="rtl">
+    تمام دستگاه‌های بلاکی در دایرکتوری <bdi>block</bdi> و <bdi>bus</bdi> قرار دارند که شامل تمام دستگاه‌های متصل به <bdi>PCI</bdi>، <bdi>USB</bdi>، سریال و ... است. توجه داشته باشید که در اینجا در <bdi>/sys</bdi> ما دستگاه‌ها را بر اساس فناوری آن‌ها داریم اما <bdi>/dev/</bdi> انتزاعی است.  
+  </span>
+</p>
 <p>
   <span dir="rtl"><bdi>block</bdi>: شامل تمام دستگاه‌های بلاکی (مثل هارد)</span>
   <span dir="rtl"><bdi>bus</bdi>: شامل همه دستگاه‌های متصل (<bdi>PCI</bdi>، <bdi>USB</bdi> و …)</span>
 </p>
+
+</div>
+
 
 <h2><bdi>udev</bdi></h2>
 
