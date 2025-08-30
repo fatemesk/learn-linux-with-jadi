@@ -1,48 +1,46 @@
+<h1>101.2 بوت کردن سیستم</h1>
 <div dir="rtl" align="right">
-
-<h1>فصل دوم: بوت سیستم (<bdi>101.2 Boot the System</bdi>)</h1>
-
-<p>
-  <span dir="rtl">
-    در این فصل روند بوت شدن لینوکس را مرور می‌کنیم: از فریمور مادربرد (<bdi>BIOS/UEFI</bdi>) و <bdi>POST</bdi> تا بارگذاری <bdi>Bootloader</bdi>، اجرای کرنل، آماده‌سازی فایل‌سیستم ریشه و شروع سرویس‌ها توسط <bdi>init</bdi>.
-  </span>
-</p>
-
-<h2>مراحل بوت</h2>
-<p>
-  <span dir="rtl">
-    1) فریمور مادربرد تست اولیهٔ <bdi>POST</bdi> را انجام می‌دهد.  
-    2) بوت‌لودر (<bdi>Bootloader</bdi>) بارگذاری می‌شود.  
-    3) بوت‌لودر، کرنل لینوکس را بر اساس تنظیماتش لود می‌کند.  
-    4) کرنل سیستم را آماده کرده (مانت فایل‌سیستم ریشه) و برنامهٔ <bdi>init</bdi> را اجرا می‌کند.  
-    5) برنامهٔ <bdi>init</bdi> سرویس‌هایی مانند شبکه، محیط گرافیکی و وب‌سرور را راه‌اندازی می‌کند.  
-  </span>
-</p>
-
-<h2><bdi>BIOS</bdi> در برابر <bdi>UEFI</bdi></h2>
-<p>
-  <span dir="rtl">
-    <bdi>BIOS</bdi> نسل قدیمی فریمور با محدودیت <bdi>MBR</bdi> و سکتور اول است؛ <bdi>UEFI</bdi> مدرن‌تر است، با پارتیشن <bdi>ESP</bdi> (مونت روی <bdi>/boot/efi</bdi>) و فایل‌های <bdi>.efi</bdi>. برای تشخیص <bdi>UEFI</bdi> می‌توانید مسیر <bdi>/sys/firmware/efi</bdi> را چک کنید.
-  </span>
-</p>
-
-<h2>نکات تکمیلی</h2>
-<p>
-  <span dir="rtl">
-    - <bdi>UEFI</bdi> از دیسک‌های بزرگ‌تر و پارتیشن‌بندی <bdi>GPT</bdi> پشتیبانی می‌کند و قابلیت‌هایی مثل <bdi>Secure Boot</bdi> دارد.  
-    - در هر پوشهٔ این فصل، خروجی‌های ترمینال را جداگانه با قالب چپ‌چین قرار دهید.
-  </span>
-</p>
-
-<!-- نمونهٔ بخش ترمینال -->
-<h2>نمونهٔ ترمینال</h2>
+<h2> فرآیند بوت </h2>
 </div>
-<div dir="ltr" align="left">
-<pre>
-# بررسی وجود مسیر EFI (سیستم‌های UEFI)
-ls /sys/firmware/efi
-</pre>
-</div>
+
 <div dir="rtl" align="right">
+<p>
+<span dir="rtl">درک این مرحله اهمیت زیادی دارد، زیرا در این زمان کنترل بسیار کمی بر سیستم دارید و نمی‌توانید دستورات زیادی برای عیب‌یابی صادر کنید. بنابراین باید به‌خوبی بدانید که چه اتفاقی در حال رخ دادن است.</span>
+</p>
+</div>
 
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">1. <bdi>Firmware</bdi> مادربورد یک تست خودکار روشن شدن (<bdi>PowerOnSelfTest</bdi> یا <bdi>POST</bdi>) انجام می‌دهد</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">2. مادربورد بوت‌لودر را بارگذاری می‌کند</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">3. بوت‌لودر کرنل <bdi>Linux</bdi> را بر اساس تنظیمات و دستورات خود بارگذاری می‌کند</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">4. کرنل سیستم را بارگذاری و آماده می‌کند (از جمله فایل‌سیستم روت) و برنامه‌ی راه‌اندازی (<bdi>init</bdi>) را اجرا می‌کند</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">5. برنامه‌ی <bdi>Init</bdi> سرویس‌ها را راه‌اندازی می‌کند؛ مثل وب‌سرور، رابط گرافیکی، شبکه و غیره</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">همان‌طور که در بخش قبل (101.1) بحث شد، <bdi>Firmware</bdi> روی مادربورد می‌تواند <bdi>BIOS</bdi> یا <bdi>UEFI</bdi> باشد.</span>
+</p>
 </div>
