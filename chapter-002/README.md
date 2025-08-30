@@ -1,4 +1,10 @@
-<h1>101.2 بوت کردن سیستم</h1>
+# learn-linux-with-jadi
+Personal Linux learning notes based on Jadi’s course
+
+<div dir="rtl" align="right">
+
+<span dir="rtl"><h1><bdi>101.2</bdi>  بوت کردن سیستم   </h1></span>  
+<br>
 <div dir="rtl" align="right">
 <h2> فرآیند بوت </h2>
 </div>
@@ -44,3 +50,64 @@
 <span dir="rtl">همان‌طور که در بخش قبل (101.1) بحث شد، <bdi>Firmware</bdi> روی مادربورد می‌تواند <bdi>BIOS</bdi> یا <bdi>UEFI</bdi> باشد.</span>
 </p>
 </div>
+
+<div dir="rtl" align="right">
+<h2> BIOS </h2>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>Basic Input Output System</bdi></span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>قدیمی‌تر</bdi></span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">- محدود به یک سکتور از دیسک است و نیاز به بوت‌لودر چندمرحله‌ای دارد</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">- می‌تواند بوت‌لودر را از <bdi>HDD</bdi> داخلی/خارجی، <bdi>CD/DVD</bdi>، <bdi>USB Flash drive</bdi> یا سرور شبکه اجرا کند</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">- اگر بوت از <bdi>HDD</bdi> باشد، از <bdi>Master Boot Record</bdi> استفاده می‌شود (یک سکتور)</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<h2> UEFI </h2>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>Unified Extensible Firmware Interface</bdi></span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl"><bdi>مدرن و پیشرفته</bdi></span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">- یک پارتیشن مخصوص برای بوت‌لودر مشخص می‌کند؛ به آن <bdi>EFI System Partition</bdi> (<bdi>ESP</bdi>) گفته می‌شود</span>
+</p>
+</div>
+
+<div dir="rtl" align="right">
+<p>
+<span dir="rtl">- <bdi>ESP</bdi> از نوع <bdi>FAT</bdi> است، روی <bdi>
+
