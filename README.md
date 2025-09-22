@@ -181,10 +181,13 @@ Personal Linux learning notes based on Jadi’s course
 ---
 
 
----
 
 ## مقایسه کارت شبکه و کارت بی‌سیم  
 <span dir="rtl">- **NIC**: اتصال سیمی به شبکه از طریق پورت <bdi>RJ45</bdi>.</span>  
+<span dir="rtl">
+  کنترلر رابط شبکه که مخفف <bdi>Network Interface Controller</bdi> نیز است، با عنوان‌های کارت رابط شبکه، آداپتور شبکه، آداپتور <bdi>LAN</bdi> یا رابط فیزیکی شبکه و با عبارات مشابه نیز معرفی می‌شود. این کنترلر یک جزء سخت‌افزاری کامپیوتری است که کامپیوتر را به یک شبکه کامپیوتری متصل می‌کند.
+  </span>
+<br>
 <span dir="rtl">- **Wireless Card**: اتصال بی‌سیم به شبکه از طریق Access Point.</span>
 
 ---
